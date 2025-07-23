@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="d2d9f2fc-fddd-40d2-8b85-1f3bb4523510">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pendaftaran Calon Anggota OSIS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Form Pendaftaran Calon Anggota OSIS</h2>
+    <form action="#" method="POST">
+      <label for="nama">Nama Lengkap</label>
+       <input type="text" name="name" required>
+
+      <label for="kelas">Kelas</label>
+     <select id="kelas" name="kelas" required>
+        <option value="">-- Pilih Kelas --</option>
+        <option value="X">X</option>
+        <option value="XI">XI</option>
+        <option value="XII">XII</option>
+      </select>
+
+      <label for="jk">Jenis Kelamin</label>
+      <select id="jk" name="jk" required>
+        <option value="">-- Pilih Jenis Kelamin --</option>
+        <option value="Laki-Laki">Laki-Laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <label for="alasan">Alasan Ingin Masuk OSIS</label>
+      <textarea id="alasan" name="alasan" rows="4" required></textarea>
+
+      <label for="kontak">Nomor WhatsApp</label>
+      <input type="tel" id="kontak" name="kontak" required>
+
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+  </div>
+
+</body>
+</html>
